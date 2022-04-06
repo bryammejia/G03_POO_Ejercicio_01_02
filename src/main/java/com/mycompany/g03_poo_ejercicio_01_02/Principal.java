@@ -22,7 +22,7 @@ public class Principal {
   System.out.println("el costo por hora es de: "+empleadoUno.costoHora);
   System.out.println("El año de ingreso del empleado fue: "+empleadoUno.anioIngreso);
   
-  System.out.println("los ingresos del empleado son de: "+empleadoUno.calcularIngresos(2022));
+  System.out.println("El empleado lleva trabajando: "+empleadoUno.calcularIngresos(2022));
   
   
   

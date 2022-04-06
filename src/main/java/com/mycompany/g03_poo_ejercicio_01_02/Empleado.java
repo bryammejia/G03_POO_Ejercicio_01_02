@@ -18,7 +18,7 @@ public class Empleado {
     public double calcularIngresos(int anioActual){
         var retorno = 1000000d;
         if(this.anioIngreso > 0 && this.anioIngreso <= anioActual ){
-            retorno = anioIngreso - anioActual;
+            retorno = anioActual - anioIngreso;
         }
      
             return retorno;
