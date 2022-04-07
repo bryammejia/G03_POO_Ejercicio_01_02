@@ -19,9 +19,13 @@ public class Empleado {
         var retorno = 1000000d;
         if(this.anioIngreso > 0 && this.anioIngreso <= anioActual ){
             retorno = anioActual - anioIngreso;
+        }else{
+                    if(this.anioIngreso < 0 );
+                    retorno = retorno * 0.02;
+                    }
+         return retorno;
         }
-     
-            return retorno;
+    
     }
   
-}
+
