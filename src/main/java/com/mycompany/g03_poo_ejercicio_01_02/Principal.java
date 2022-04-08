@@ -17,27 +17,31 @@ public class Principal {
         empleadoUno.costoHora = 11.5;
         empleadoUno.anioIngreso = 2003;
         
+  System.out.println("-----------------------MENU PRINCIPAL------------------------");
+  System.out.println("");
   System.out.println("El empleado N-1 se llama: "+empleadoUno.nombre);
   System.out.println("Sus horas trabajadas son de: "+empleadoUno.horasTrabajadas);
   System.out.println("el costo por hora es de: "+empleadoUno.costoHora);
   System.out.println("El año de ingreso del empleado fue: "+empleadoUno.anioIngreso);
   
-  
+  System.out.println("");
   System.out.println("Los ingresos totales del trabajador es de: "+empleadoUno.calcularIngreso(2022));
 
   System.out.println("El bono extra es de: "+empleadoUno.calcularHoraBonusExtra(150));
   
   System.out.println("Los impuestos son: "+empleadoUno.calcularImpuestos(500, 1000, 2000));
   
-  System.out.println("-------------------------------------------------------------");
-  
+  System.out.println("------------------------------------------------------------------");
+  System.out.println("");
   
           var empleadoDos = new Empleado();
           empleadoDos.nombre = "Bryam Mejia";
-          empleadoDos.horasTrabajadas = 100;
+          empleadoDos.horasTrabajadas = 170;
           empleadoDos.costoHora = 9;
           empleadoDos.anioIngreso = 2010;
-        
+   
+  System.out.println("-----------------------MENU PRINCIPAL------------------------");
+  System.out.println("");
   System.out.println("El empleado N-2 se llama: "+empleadoDos.nombre);
   System.out.println("Sus horas trabajadas son de: "+empleadoDos.horasTrabajadas);
   System.out.println("el costo por hora es de: "+empleadoDos.costoHora);
@@ -50,21 +54,22 @@ public class Principal {
   
   System.out.println("Los impuestos son: "+empleadoDos.calcularImpuestos(500, 1000, 2000));
           
-  System.out.println("-------------------------------------------------------------");
-  
-  
-        
+  System.out.println("------------------------------------------------------------------");
+  System.out.println("");
+       
           var empleadoTres = new Empleado();
-          empleadoTres.nombre = "Bryam Mejia";
-          empleadoTres.horasTrabajadas = 100;
-          empleadoTres.costoHora = 9;
-          empleadoTres.anioIngreso = 2010;
+          empleadoTres.nombre = "Leonel Messi";
+          empleadoTres.horasTrabajadas = 190;
+          empleadoTres.costoHora = 10;
+          empleadoTres.anioIngreso = 2005;
         
+  System.out.println("-----------------------MENU PRINCIPAL------------------------");
+  System.out.println("");
   System.out.println("El empleado N-2 se llama: "+empleadoTres.nombre);
   System.out.println("Sus horas trabajadas son de: "+empleadoTres.horasTrabajadas);
   System.out.println("el costo por hora es de: "+empleadoTres.costoHora);
   System.out.println("El año de ingreso del empleado fue: "+empleadoTres.anioIngreso);
-  
+  System.out.println("");
   
   System.out.println("Los ingresos totales del trabajador es de: "+empleadoTres.calcularIngreso(2022));
 
@@ -72,6 +77,6 @@ public class Principal {
   
   System.out.println("Los impuestos son: "+empleadoTres.calcularImpuestos(500, 1000, 2000));
           
-  System.out.println("-------------------------------------------------------------");
+  System.out.println("-------------------------------------------------------------------");
     }   
 }
