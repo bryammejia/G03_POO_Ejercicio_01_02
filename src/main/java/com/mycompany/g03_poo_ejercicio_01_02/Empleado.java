@@ -32,37 +32,39 @@ public class Empleado {
         return suma;
     }
     
-    public double calcularHoraBonusExtra(int maximoHorasTrabajadas){
+    public double calcularBonoHorasExtra (int maximoHorasTrabajadas){
+        var retorno = 1000000d;
         
-        var retorno = 10000000d;
-        var multiplicacion = 100000d;
-        
-        if(this.horasTrabajadas >= 0 && this.horasTrabajadas <= 150);
-            retorno =(this.horasTrabajadas - maximoHorasTrabajadas);
-            multiplicacion = (this.costoHora * retorno);
-            
-            
-        
-            
-        return multiplicacion;
-    }
-    
-    
-            public double calcularImpuestos(int limit1, int limit2, int limit3 ){
-            
-         var retorno=10000d;
-        if(this.costoHora*horasTrabajadas >= 0 && this.costoHora*horasTrabajadas <= limit1){
-            if(this.costoHora*horasTrabajadas >= limit1 && this.costoHora*horasTrabajadas<= limit2)
-                retorno=this.costoHora*horasTrabajadas*0.05;
-            else
-                retorno=this.costoHora*horasTrabajadas*0.12;
+        if(this.horasTrabajadas >= maximoHorasTrabajadas){
+            retorno = (this.horasTrabajadas - maximoHorasTrabajadas)* (this.costoHora * 2);
         }else{
-             if(this.costoHora*horasTrabajadas>=limit2 && this.costoHora*horasTrabajadas<=limit3)
-                retorno=this.costoHora*horasTrabajadas*0.25;
+            retorno = 0;
         }
         return retorno;
-   }
+    }
     
+    public double calcularImpuestos(int limit1, int limit2, int limit3){
+        var retorno = 1000000d;
+        double r; 
+        r=this.costoHora*this.horasTrabajadas;
+        if(r>0 && r<limit1){
+            retorno = 0;
+        }else{
+            if(r>limit1 && r<limit2){
+                retorno = this.costoHora*this.horasTrabajadas * 0.05;
+            }else{
+                if(r>=limit2 && r<=limit3){
+                    retorno = this.costoHora*this.horasTrabajadas*0.12;
+                }else{
+                    if(r>limit3){
+                     retorno=this.costoHora*this.horasTrabajadas*0.25;   
+                    }
+                }
+            }
+        }
+        return retorno;
+    }
+            
     }
   
 
