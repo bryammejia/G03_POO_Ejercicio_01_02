@@ -13,16 +13,22 @@ public class Principal {
      
         var empleadoUno = new Empleado();
         empleadoUno.nombre = "Alexander Coronel";
-        empleadoUno.horasTrabajadas = 200;
-        empleadoUno.costoHora = 2;
-        empleadoUno.anioIngreso = 2010;
+        empleadoUno.horasTrabajadas = 160;
+        empleadoUno.costoHora = 11.5;
+        empleadoUno.anioIngreso = 2003;
         
   System.out.println("El empleado N-1 se llama: "+empleadoUno.nombre);
   System.out.println("Sus horas trabajadas son de: "+empleadoUno.horasTrabajadas);
   System.out.println("el costo por hora es de: "+empleadoUno.costoHora);
   System.out.println("El año de ingreso del empleado fue: "+empleadoUno.anioIngreso);
   
-  System.out.println("El empleado lleva trabajando: "+empleadoUno.calcularIngresos(2022));
+  
+  System.out.println("Los ingresos totales del trabajador es de: "+empleadoUno.calcularIngreso(2022));
+
+  System.out.println("El bono extra es de: "+empleadoUno.calcularHoraBonusExtra(150));
+  
+        System.out.println("Los impuestos son: "+empleadoUno.calcularImpuestos(500, 1000, 2000));
+          
   
   
   
