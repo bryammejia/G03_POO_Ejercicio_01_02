@@ -17,7 +17,7 @@ public class Empleado {
     
     public double calcularIngreso(int anioActual){
         
-        var sueldo = 1000000d;
+        var sueldo = 100000d;
         var edadEmpleado = 1000000d;
         var multiplicacion = 10000d;
         var multiplicacion2 = 100000d;
