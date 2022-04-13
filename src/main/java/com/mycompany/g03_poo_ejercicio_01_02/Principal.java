@@ -31,8 +31,8 @@ public class Principal {
   
   System.out.println("Los impuestos son: "+empleadoUno.calcularImpuestos(500, 1000, 2000));
   
-        
   
+        
   System.out.println("------------------------------------------------------------------");
   System.out.println("");
   
